@@ -3,21 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Proyecto</title>
+    <title>Portfolio Daniel Fernández</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
 
+    <!-- Header -->
     <header>
-        <h1>Bienvenido a mi Programa</h1>
-    </header>
+        <div class="container">
+            <!-- Logo con foto circular y nombre -->
+            <div class="logo">
+                <a href="#inicio">
+                    <img src="img/foto.jpg" alt="Foto de Daniel Fernández Mateos">
+                    Daniel Fernández Mateos
+                </a>
+            </div>
 
+            <!-- Navegación -->
+            <nav>
+                <ul>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="img/CV_DanielFernandezMateos.pdf" target="_blank">Currículum</a></li>
+                </ul>
+            </nav>
+
+            <!-- Redes Sociales -->
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <a href="https://github.com/Dani2oo3" target="_blank">
+                            <img src="img/Github_dark.svg" alt="GitHub">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/daniel-fernandez-mateos-11aa72231/" target="_blank">
+                            <img src="img/linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>    
+     
     <main>
-        <p>Este es un ejemplo de la estructura básica de una página HTML.</p>
+        <section class="profile" id="sobre-mi">
+            <a href="#inicio">
+                <img src="img/foto.jpg" alt="Foto de Daniel Fernández Mateos">
+                <h1>Daniel Fernández Mateos</h1>
+                <p>Desarrollador de Aplicaciones Web</p>
+                <p>Desarrollador de Aplicaciones Multiplataforma</p>
+                <p>Actualmente cursando Ingeniería Informática en la URJC</p>
+                <p>Apasionado por el aprendizaje continuo y la resolución de problemas complejos.</p>
+            </a>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <p>Texto sobre habilidades...</p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <p>Texto sobre proyectos...</p>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto">
+            <div class="contact-container">
+                <h2>Contacto</h2>
+                <div class="contact-info">
+                    <p>Para cualquier consulta, no dudes en contactarme a través de los siguientes medios:</p>
+                    <ul>
+                        <li>
+                            <img src="img/email_icon.svg" alt="Email">
+                            <a href="mailto:daniel@example.com">daniel@example.com</a>
+                        </li>
+                        <li>
+                            <img src="img/phone_icon.svg" alt="Teléfono">
+                            <a href="tel:+34123456789">+34 123 456 789</a>
+                        </li>
+                        <li>
+                            <img src="img/linkedin_icon.svg" alt="LinkedIn">
+                            <a href="https://www.linkedin.com/in/daniel-fernandez-mateos-11aa72231/" target="_blank">LinkedIn</a>
+                        </li>
+                        <li>
+                            <img src="img/github_icon.svg" alt="GitHub">
+                            <a href="https://github.com/Dani2oo3" target="_blank">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Daniel Fernández Mateos</p>
+        <div class="contact-info">
+            <h2>Información de Contacto</h2>
+            <p><strong>Correo Electrónico Profesional:</strong> <a href="danielfernandezmateos03@gmail.com">danielfernandezmateos03@gmail.com</a></p>
+            <p><strong>Teléfono:</strong> <a href="tel:+31615681592">615 681 592</a></p>
+        </div>
+
+        <div class="social-media">
+            <ul>
+                <li>
+                    <a href="https://github.com/Dani2oo3" target="_blank">
+                        <img src="img/Github_dark.svg" alt="GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/daniel-fernandez-mateos-11aa72231/" target="_blank">
+                        <img src="img/linkedin.svg" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="quick-links">
+            <h2>Enlaces Rápidos</h2>
+            <p><a href="img/CV_DanielFernandezMateos.pdf" target="_blank">Ver mi CV</a></p>
+        </div>
+
+        <div class="credits">
+            <p>&copy; 2024 Daniel Fernández Mateos. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
 </body>
