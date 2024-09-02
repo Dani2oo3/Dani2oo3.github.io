@@ -154,58 +154,87 @@ main {
     font-size: 1.1em; /* Tamaño del texto del párrafo */
 }
 
-/* Sección de Contacto */
-#contacto {
-    background-color: #001122; /* Azul marino para el fondo de la sección */
-    color: #E3F2FD; /* Blanco para el texto */
-    text-align: center;
+/* Estilos para el Formulario de Contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre los elementos del formulario */
+    max-width: 600px;
+    margin: 0 auto; /* Centra el formulario horizontalmente */
 }
 
-.contact-container {
-    max-width: 800px; /* Limita el ancho para mayor legibilidad */
-    margin: 0 auto; /* Centra la sección horizontalmente */
+form label {
+    color: #E3F2FD; /* Blanco para las etiquetas */
+    font-size: 1.1em;
+    text-align: left;
 }
 
+form input, form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #64B5F6; /* Borde azul claro */
+    border-radius: 5px;
+    background-color: #001122; /* Azul marino para el fondo de los campos */
+    color: #E3F2FD; /* Blanco para el texto en los campos */
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #7cc0f8; /* Borde más claro al hacer foco */
+}
+
+form button {
+    background-color: #64B5F6; /* Azul claro para el botón */
+    color: #001932; /* Azul marino para el texto del botón */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #42A5F5; /* Azul más intenso en hover */
+}
+
+/* Métodos de Contacto */
 .contact-container h2 {
-    font-size: 2em; /* Tamaño grande para el encabezado */
-    margin-bottom: 20px; /* Espaciado debajo del encabezado */
-    color: #64B5F6; /* Azul más claro para el encabezado */
+    font-size: 3em; /* Tamaño grande */
+    text-align: center; /* Centra horizontalmente el texto */
+    margin-bottom: 20px; /* Espacio inferior */
 }
 
-.contact-info {
-    font-size: 1.1em; /* Tamaño del texto del párrafo */
-}
 
-.contact-info p {
-    margin-bottom: 20px; /* Espaciado debajo del párrafo */
-}
 
-.contact-info ul {
-    list-style: none; /* Elimina los puntos de la lista */
+.contact-methods {
+    list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 20px 0 0 0; /* Espaciado superior entre el formulario y los métodos de contacto */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaciado entre los ítems de contacto */
+    align-items: center; /* Centra horizontalmente los ítems */
 }
 
-.contact-info ul li {
-    display: flex; /* Utiliza flexbox para alinear los ítems */
-    align-items: center; /* Centra verticalmente los ítems */
-    margin-bottom: 15px; /* Espaciado entre los ítems */
+.contact-methods li {
+    display: flex;
+    align-items: center;
 }
 
-.contact-info ul li img {
-    width: 30px; /* Tamaño de los íconos */
+.contact-methods img {
+    width: 30px;
     height: 30px;
-    margin-right: 10px; /* Espaciado entre el ícono y el texto */
+    margin-right: 10px;
 }
 
-.contact-info ul li a {
-    color: #E3F2FD; /* Blanco para el texto de los enlaces */
-    text-decoration: none; /* Elimina el subrayado */
-    transition: color 0.3s ease; /* Transición suave para el color */
+.contact-methods a {
+    color: #E3F2FD; /* Blanco para el texto */
+    text-decoration: none;
 }
 
-.contact-info ul li a:hover {
-    color: #7cc0f8; /* Azul más claro en hover */
+.contact-methods a:hover {
+    color: #64B5F6; /* Azul claro en hover */
 }
 
 /* Footer */
